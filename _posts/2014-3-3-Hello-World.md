@@ -1,10 +1,8 @@
 ---
 layout: post
-title: You're up and running!
+title: 一日一钱，千日千钱。绳锯木断，水滴石穿
 ---
+故天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能。_——孟轲
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+凡是心的事情在起头总是这样一来的，起初热心的人很多，而不久就冷淡下去，撒手不做了，因为他已经明白，不经过一番苦工是做不成的，而只有想做的人，才忍得过这番痛苦。——陀思妥耶夫斯基
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
