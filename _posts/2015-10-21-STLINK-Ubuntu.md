@@ -16,41 +16,30 @@ title: Ubuntu下使用STLINK
 
 编译stlink代码
 
-`$ cd stlink
-$ ./autogen.sh
-$ make
-$ cd flash
-$ make`
+    $ cd stlink
+    $ ./autogen.sh
+    $ make
+    $ cd flash
+    $ make
 
 安装程序
 
-`$ cd ..
-
-$ sudo install -s -m 775 gdbserver/st-uil /usr/bin/st-util
-
-$ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash`
-
+    $ cd ..
+    $ sudo install -s -m 775 gdbserver/st-uil /usr/bin/st-util
+    $ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash`
 
 if missing package libusb-1.0
+    $ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev`
 
-`$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev`
-
-`
-$ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules
-
-$ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
-
-$ sudo install -m 644 49-stlinkv2-1.rules /etc/udev/rules.d/49-stlinkv2-1.rules 
-
-$ sudo install -m 644 stlink_v1.modprobe.conf /etc/modprobe.d/stlink_v1.modprobe.conf
-
-$ sudo udevadm control --reload-rules`
-
+    $ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules
+    $ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
+    $ sudo install -m 644 49-stlinkv2-1.rules /etc/udev/rules.d/49-stlinkv2-1.rules 
+    $ sudo install -m 644 stlink_v1.modprobe.conf /etc/modprobe.d/stlink_v1.modprobe.conf
+    $ sudo udevadm control --reload-rules`
 
 Start ST-util:
 
-$ st-util -p 1234 & # if failed, unknown chip id! 0, please try more times!
-
+    $ st-util -p 1234 & # if failed, unknown chip id! 0, please try more times!
 
 Start GDB
 
