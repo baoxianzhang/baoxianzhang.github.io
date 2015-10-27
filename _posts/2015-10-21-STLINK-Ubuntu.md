@@ -11,9 +11,7 @@ title: Ubuntu下使用STLINK
 1. **下载stlink包**
 
 从github里下载stlink代码
-```shell
-$ git clone git://github.com/texane/stlink.git
-```
+`$ git clone git://github.com/texane/stlink.git`
 编译stlink代码
 ```shell
     $ cd stlink
@@ -23,13 +21,13 @@ $ git clone git://github.com/texane/stlink.git
     $ make
 ```
 安装程序
-```shell```
+```shell
     $ cd ..
     $ sudo install -s -m 775 gdbserver/st-uil /usr/bin/st-util
     $ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash`
-```shell```
+```
 if missing package libusb-1.0
-    $ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev`
+`$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev`
 ```shell
     $ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules
     $ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
@@ -38,25 +36,21 @@ if missing package libusb-1.0
     $ sudo udevadm control --reload-rules`
 ```
 Start ST-util:
-
-    $ st-util -p 1234 & # if failed, unknown chip id! 0, please try more times!
+`$ st-util -p 1234 & # if failed, unknown chip id! 0, please try more times!`
 
 Start GDB
-
-$ arm-none-eabi-gdb xxxx.elf
+`$ arm-none-eabi-gdb xxxx.elf`
 
 
 Within gdb:
-
+```gdb
 (gdb)tar ext:1234
-
 (gdb)load
-
 (gdb)run
-
+```
 
 Loading will take a few moments. Watch the gdb output to see when it is completed. When loading is complete you should see something similar to this for gdb output.
-
+```gdb
 (gdb)kill
-
 (gdb)quit
+```
