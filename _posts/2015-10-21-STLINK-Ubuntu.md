@@ -15,13 +15,13 @@ title: Ubuntu下使用STLINK
 `$ git clone git://github.com/texane/stlink.git`
 
 编译stlink代码
-
+```shell
     $ cd stlink
     $ ./autogen.sh
     $ make
     $ cd flash
     $ make
-
+```
 安装程序
 
     $ cd ..
