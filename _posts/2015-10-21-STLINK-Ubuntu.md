@@ -17,13 +17,9 @@ title: Ubuntu下使用STLINK
 编译stlink代码
 
 `$ cd stlink
-
 $ ./autogen.sh
-
 $ make
-
 $ cd flash
-
 $ make`
 
 安装程序
