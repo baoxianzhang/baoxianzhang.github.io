@@ -16,7 +16,7 @@ title: Ubuntu下使用STLINK
 
 编译stlink代码
 
-```shell
+```
 $ cd stlink
 $ ./autogen.sh
 $ make
@@ -26,7 +26,7 @@ $ make
 
 安装程序
 
-```shell
+```
 $ cd ..
 $ sudo install -s -m 775 gdbserver/st-uil /usr/bin/st-util
 $ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash`
@@ -36,7 +36,7 @@ if missing package libusb-1.0
 
 `$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev`
 
-```shell
+```
 $ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules
 $ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
 $ sudo install -m 644 49-stlinkv2-1.rules /etc/udev/rules.d/49-stlinkv2-1.rules 
