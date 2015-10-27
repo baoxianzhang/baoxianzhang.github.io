@@ -2,17 +2,21 @@
 layout: post
 title: Ubuntu下使用STLINK
 ---
-参考链接：
+**参考链接：**
 
-Flashing the STM32VL with stlink：http://gpio.kaltpost.de/?page_id=148
+[Flashing the STM32VL with stlink](http://gpio.kaltpost.de/?page_id=148)
 
-Flashing via JTAF/SWD with ST-LINK: https://pixhawk.org/dev/nuttx/building_and_flashing_console
+[Flashing via JTAF/SWD with ST-LINK](https://pixhawk.org/dev/nuttx/building_and_flashing_console)
 
-1. 下载stlink包
+1. **下载stlink包**
 
-$ git clone git://github.com/texane/stlink.git
+从github里下载stlink代码
 
-$ cd stlink
+`$ git clone git://github.com/texane/stlink.git`
+
+编译stlink代码
+
+`$ cd stlink
 
 $ ./autogen.sh
 
@@ -20,20 +24,22 @@ $ make
 
 $ cd flash
 
-$ make
+$ make`
 
-$ cd ..
+安装程序
+
+`$ cd ..
 
 $ sudo install -s -m 775 gdbserver/st-uil /usr/bin/st-util
 
-$ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash
+$ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash`
 
 
 if missing package libusb-1.0
 
-$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev
+`$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev`
 
-
+`
 $ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules
 
 $ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
@@ -42,7 +48,7 @@ $ sudo install -m 644 49-stlinkv2-1.rules /etc/udev/rules.d/49-stlinkv2-1.rules
 
 $ sudo install -m 644 stlink_v1.modprobe.conf /etc/modprobe.d/stlink_v1.modprobe.conf
 
-$ sudo udevadm control --reload-rules
+$ sudo udevadm control --reload-rules`
 
 
 Start ST-util:
