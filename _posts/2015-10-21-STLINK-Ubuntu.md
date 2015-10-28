@@ -54,14 +54,14 @@ Start GDB
 
 Within gdb:
 
-```gdb
+```
 (gdb)tar ext:1234
 (gdb)load
 (gdb)run
 ```
 Loading will take a few moments. Watch the gdb output to see when it is completed. When loading is complete you should see something similar to this for gdb output.
 
-```gdb
+```
 (gdb)kill
 (gdb)quit
 ```
