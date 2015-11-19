@@ -42,11 +42,15 @@ Web URL: https://launchpad.net/gcc-arm-embedded/+download
 
 2.1.2 Extract the tar.bz2 file
 
-`$ tar -xjvf gcc-arm-none-eabi-xxxxxxxxxxx.tar.bz2`
+```
+$ tar -xjvf gcc-arm-none-eabi-xxxxxxxxxxx.tar.bz2
+```
 
 2.1.3 Install gcc-arm-none-eabi
 
-`$ sudo cp -r gcc-arm-none-eabi-xxxxxxxxxx /usr/srci`
+```
+$ sudo cp -r gcc-arm-none-eabi-xxxxxxxxxx /usr/srci
+```
 
 2.1.4 Add to the environment
 
@@ -54,7 +58,9 @@ Add "export PATH=$PATH:/usr/src/gcc/arm-none-eabi-xxxxxxxxxx/bin" at the end of 
 
 2.1.5 If 64 bit system, it can't find arm-none-eabi-gcc, please install the ia32-libs
 
-`$ sudo apt-get install ia32-libs`
+```
+$ sudo apt-get install ia32-libs
+```
 
 Tips:  Ubuntu has removed the ia32-libs since 13.10. So in 13.10+, do the following:
 

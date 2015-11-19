@@ -15,7 +15,9 @@ title: Ubuntu下使用STLINK
 
 从github里下载stlink代码
 
-`$ git clone git://github.com/texane/stlink.git`
+```
+$ git clone git://github.com/texane/stlink.git
+```
 
 编译stlink代码
 
@@ -47,11 +49,15 @@ $ sudo udevadm control --reload-rules`
 
 Start ST-util:
 
-`$ st-util -p 1234 & # if failed, unknown chip id! 0, please try more times!`
+```
+$ st-util -p 1234 & # if failed, unknown chip id! 0, please try more times!
+```
 
 Start GDB
 
-`$ arm-none-eabi-gdb xxxx.elf`
+```
+$ arm-none-eabi-gdb xxxx.elf
+```
 
 Within gdb:
 
