@@ -2,8 +2,7 @@
 layout: post
 title: Compile Nuttx RTOS on Ubuntu
 ---
-
-``
+在Ubuntu下编译Nuttx实时操作系统
 
 **1. Download Nuttx source files**
 
@@ -13,7 +12,7 @@ Main command:
 
 ```
  $ git clone https://bitbucket.org/patacongo/nuttx.git nuttx
-  $ git clone https://bitbucket.org/nuttx/apps.git apps
+ $ git clone https://bitbucket.org/nuttx/apps.git apps
  $ cd nuttx
  $ git submodule init
  $ git submodule update
@@ -55,7 +54,7 @@ Add "export PATH=$PATH:/usr/src/gcc/arm-none-eabi-xxxxxxxxxx/bin" at the end of 
 
 2.1.5 If 64 bit system, it can't find arm-none-eabi-gcc, please install the ia32-libs
 
- `$ sudo apt-get install ia32-libs`
+`$ sudo apt-get install ia32-libs`
 
 Tips:  Ubuntu has removed the ia32-libs since 13.10. So in 13.10+, do the following:
 

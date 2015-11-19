@@ -2,6 +2,9 @@
 layout: post
 title: Ubuntu下使用STLINK
 ---
+
+使用STLINK烧录调试程序
+
 **参考链接：**
 
 [Flashing the STM32VL with stlink](http://gpio.kaltpost.de/?page_id=148)
@@ -33,9 +36,8 @@ $ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash
 ```
 if missing package libusb-1.0
 
-`$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev`
-
 ```
+$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev
 $ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules
 $ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
 $ sudo install -m 644 49-stlinkv2-1.rules /etc/udev/rules.d/49-stlinkv2-1.rules 
