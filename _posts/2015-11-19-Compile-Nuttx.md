@@ -21,7 +21,7 @@ The following is optional:
 
 ```
  $ git config --global user.name "My Name"
- $ git config --global user.name my.name@example.com
+ $ git config --global user.email my.name@example.com
  $ git config --global color.branch auto
  $ git config --global color.diff auto
  $ git config --global color.interactive auto
