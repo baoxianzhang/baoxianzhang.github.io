@@ -33,7 +33,7 @@ $ make
 
 ```
 $ cd ..
-$ sudo install -s -m 775 gdbserver/st-uil /usr/bin/st-util
+$ sudo install -s -m 775 gdbserver/st-util /usr/bin/st-util
 $ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash
 ```
 if missing package libusb-1.0
