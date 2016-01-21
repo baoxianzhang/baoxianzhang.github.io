@@ -44,7 +44,7 @@ $ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules
 $ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
 $ sudo install -m 644 49-stlinkv2-1.rules /etc/udev/rules.d/49-stlinkv2-1.rules 
 $ sudo install -m 644 stlink_v1.modprobe.conf /etc/modprobe.d/stlink_v1.modprobe.conf
-$ sudo udevadm control --reload-rules`
+$ sudo udevadm control --reload-rules
 ```
 
 Start ST-util:
