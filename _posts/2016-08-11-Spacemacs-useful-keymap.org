@@ -1,0 +1,13 @@
+#+TITLE: Spacemacs record
+#+LANGUAGE: en
+#+AUTHOR: baoxianzhang
+#+EMAIL: baoxianzhit@gmail.com
+
+Spacemacs record about some useful key map and knowledge.
+* Some useful link about Spacemacs
+
+GitHub: https://github.com/syl20bnr/spacemacs
+Documentation: http://spacemacs.org/doc/DOCUMENTATION#orgheadline180
+
+* Some useful key map
+SPC h SPC
