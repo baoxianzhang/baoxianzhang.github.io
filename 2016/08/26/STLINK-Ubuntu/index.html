@@ -4,21 +4,48 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hello World | Hello baoxianzhang</title>
+  <title>Ubuntu下使用STLINK | Hello baoxianzhang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="使用STLINK烧录调试程序
+参考链接：
+Flashing the STM32VL with stlink
+Flashing via JTAF/SWD with ST-LINK
+
+下载stlink包
+
+从github里下载stlink代码
+1$ git clone git://github.com/texane/stlink.git
+编译stlink代码
+12345$ cd stlink$ ./a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/08/26/hello-world/index.html">
+<meta property="og:title" content="Ubuntu下使用STLINK">
+<meta property="og:url" content="http://yoursite.com/2016/08/26/STLINK-Ubuntu/index.html">
 <meta property="og:site_name" content="Hello baoxianzhang">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-08-26T13:22:35.000Z">
+<meta property="og:description" content="使用STLINK烧录调试程序
+参考链接：
+Flashing the STM32VL with stlink
+Flashing via JTAF/SWD with ST-LINK
+
+下载stlink包
+
+从github里下载stlink代码
+1$ git clone git://github.com/texane/stlink.git
+编译stlink代码
+12345$ cd stlink$ ./a">
+<meta property="og:updated_time" content="2016-08-26T14:38:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Ubuntu下使用STLINK">
+<meta name="twitter:description" content="使用STLINK烧录调试程序
+参考链接：
+Flashing the STM32VL with stlink
+Flashing via JTAF/SWD with ST-LINK
+
+下载stlink包
+
+从github里下载stlink代码
+1$ git clone git://github.com/texane/stlink.git
+编译stlink代码
+12345$ cd stlink$ ./a">
   
     <link rel="alternative" href="/atom.xml" title="Hello baoxianzhang" type="application/atom+xml">
   
@@ -200,11 +227,11 @@ Quick">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-STLINK-Ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/26/hello-world/" class="article-date">
-  	<time datetime="2016-08-26T13:30:36.854Z" itemprop="datePublished">2016-08-26</time>
+      <a href="/2016/08/26/STLINK-Ubuntu/" class="article-date">
+  	<time datetime="2016-08-26T14:44:25.384Z" itemprop="datePublished">2016-08-26</time>
 </a>
     </div>
   
@@ -217,7 +244,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Ubuntu下使用STLINK
     </h1>
   
 
@@ -233,15 +260,29 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>使用STLINK烧录调试程序</p>
+<p><strong>参考链接：</strong></p>
+<p><a href="http://gpio.kaltpost.de/?page_id=148" target="_blank" rel="external">Flashing the STM32VL with stlink</a></p>
+<p><a href="https://pixhawk.org/dev/nuttx/building_and_flashing_console" target="_blank" rel="external">Flashing via JTAF/SWD with ST-LINK</a></p>
+<ol>
+<li><strong>下载stlink包</strong></li>
+</ol>
+<p>从github里下载stlink代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git://github.com/texane/stlink.git</div></pre></td></tr></table></figure>
+<p>编译stlink代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ cd stlink</div><div class="line">$ ./autogen.sh</div><div class="line">$ make</div><div class="line">$ cd flash</div><div class="line">$ make</div></pre></td></tr></table></figure>
+<p>安装程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cd ..</div><div class="line">$ sudo install -s -m 775 gdbserver/st-util /usr/bin/st-util</div><div class="line">$ sudo install -s -m 775 flash/st-flash /usr/bin/st-flash</div></pre></td></tr></table></figure>
+<p>if missing package libusb-1.0</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ sudo apt-get install libsgutils2-dev libusb-1.0.0-dev</div><div class="line">$ sudo install -m 644 49-stlinkv1.rules /etc/udev/rules.d/49-stlinkv1.rules</div><div class="line">$ sudo install -m 644 49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules</div><div class="line">$ sudo install -m 644 49-stlinkv2-1.rules /etc/udev/rules.d/49-stlinkv2-1.rules </div><div class="line">$ sudo install -m 644 stlink_v1.modprobe.conf /etc/modprobe.d/stlink_v1.modprobe.conf</div><div class="line">$ sudo udevadm control --reload-rules</div></pre></td></tr></table></figure>
+<p>Start ST-util:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ st-util -p 1234 &amp; # if failed, unknown chip id! 0, please try more times!</div></pre></td></tr></table></figure>
+<p>Start GDB</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ arm-none-eabi-gdb xxxx.elf</div></pre></td></tr></table></figure>
+<p>Within gdb:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(gdb)tar ext:1234</div><div class="line">(gdb)load</div><div class="line">(gdb)run</div></pre></td></tr></table></figure>
+<p>Loading will take a few moments. Watch the gdb output to see when it is completed. When loading is complete you should see something similar to this for gdb output.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">(gdb)kill</div><div class="line">(gdb)quit</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -251,15 +292,11 @@ Quick">
     
 <nav id="article-nav">
   
-    <a href="/2016/08/26/Compile-Nuttx/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Compile Nuttx RTOS on Ubuntu
-        
-      </div>
-    </a>
   
+    <a href="/2016/08/26/First-Page/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">一日一钱，千日千钱。绳锯木断，水滴石穿</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -292,7 +329,7 @@ Quick">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hello-world" data-title="Hello World" data-url="http://yoursite.com/2016/08/26/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="STLINK-Ubuntu" data-title="Ubuntu下使用STLINK" data-url="http://yoursite.com/2016/08/26/STLINK-Ubuntu/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
