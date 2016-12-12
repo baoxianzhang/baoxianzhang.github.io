@@ -1,0 +1,16 @@
+#+TITLE:       First post using org-page
+#+AUTHOR:      leo
+#+EMAIL:       leo@leo
+#+DATE:        2016-12-12 Mon
+#+URI:         /blog/%y/%m/%d/first-post-using-org-page
+#+KEYWORDS:    blog, org-page, spacemacs, useage
+#+TAGS:        blog, spacemacs
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: This is the first blog using the org-page and describe the progress of configuration of the org-page in spacemacs.
+
+* Brief
+
+* Configuration the org-page in spacemacs
+
+* Future
